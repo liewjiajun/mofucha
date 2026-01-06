@@ -23,7 +23,7 @@ Home-based matcha drinks business in Clementi, Singapore.
 
 ## Business Info
 
-- **Location:** Clementi, Singapore (home-based)
+- **Location:** 311B Clementi Ave 4, Singapore (home-based)
 - **Availability:** Pre-order required
 - **Domain Registrar:** Vodien
 

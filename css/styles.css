@@ -1030,6 +1030,25 @@ section {
     font-weight: 500;
 }
 
+.map-container {
+    margin-top: var(--space-xl);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 250px;
+    }
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
