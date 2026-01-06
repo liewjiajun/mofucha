@@ -31,6 +31,7 @@ Home-based matcha drinks business in Clementi, Singapore.
 
 - HTML5 / CSS3 / JavaScript (no frameworks)
 - Google Fonts: Nunito, Playfair Display
+- Google Analytics (G-4JHLEHZKJ6)
 - Mobile-responsive design
 - Hosting: Netlify (auto-deploy from GitHub)
 
