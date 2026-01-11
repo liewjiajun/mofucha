@@ -405,9 +405,6 @@ ul {
     box-shadow: var(--shadow-lg), 0 0 60px rgba(124, 154, 107, 0.25);
 }
 
-.btn-primary:hover svg {
-    transform: translateY(3px);
-}
 
 .btn-secondary {
     background-color: var(--white);
@@ -422,9 +419,6 @@ ul {
     box-shadow: var(--shadow-md);
 }
 
-.btn-secondary:hover svg {
-    transform: translateY(3px);
-}
 
 .btn-large {
     padding: var(--space-lg) var(--space-2xl);
@@ -1220,4 +1214,348 @@ section {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ==========================================================================
+   Page Header (for About & Contact pages)
+   ========================================================================== */
+.page-header {
+    padding: calc(var(--space-4xl) + 60px) 0 var(--space-2xl);
+    background-color: var(--cream);
+    text-align: center;
+}
+
+.page-header .section-header {
+    animation: fade-up 0.8s ease-out;
+}
+
+.page-header .section-label {
+    animation: fade-up 0.6s ease-out;
+}
+
+.page-header .section-title {
+    margin-bottom: var(--space-sm);
+    animation: fade-up 0.7s ease-out;
+}
+
+.page-header .section-desc {
+    animation: fade-up 0.9s ease-out;
+}
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+.about-page {
+    padding: var(--space-3xl) 0 var(--space-4xl);
+    background-color: var(--white);
+}
+
+.about-page-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-4xl);
+    align-items: start;
+    margin-bottom: var(--space-3xl);
+    animation: fade-up 1s ease-out;
+}
+
+@media (max-width: 900px) {
+    .about-page-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+}
+
+.about-page-text h2 {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin: var(--space-2xl) 0 var(--space-md);
+}
+
+.about-page-text h2:first-child {
+    margin-top: 0;
+}
+
+.about-page-text p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
+.about-page-text a {
+    color: var(--matcha-dark);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.about-page-text a:hover {
+    color: var(--matcha);
+}
+
+.about-page-visual {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .about-page-visual {
+        position: relative;
+        top: 0;
+        order: -1;
+        margin-bottom: var(--space-xl);
+    }
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.value-card {
+    background-color: var(--cream);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-card .value-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto var(--space-md);
+    background-color: var(--matcha-lighter);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-card .value-icon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--matcha-dark);
+}
+
+.value-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.value-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+.about-cta {
+    text-align: center;
+    padding-top: var(--space-2xl);
+    border-top: 1px solid var(--cream-dark);
+}
+
+.about-cta p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.about-cta .btn {
+    display: inline-flex;
+}
+
+/* Homepage About CTA */
+.about-text .about-cta {
+    margin-top: var(--space-xl);
+    padding-top: 0;
+    border-top: none;
+    text-align: left;
+}
+
+/* ==========================================================================
+   Contact Page
+   ========================================================================== */
+.contact-page {
+    padding: var(--space-3xl) 0 var(--space-4xl);
+    background-color: var(--white);
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto var(--space-3xl);
+    text-align: center;
+    animation: fade-up 1s ease-out;
+}
+
+.contact-intro p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.contact-intro a {
+    color: var(--matcha-dark);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.contact-intro a:hover {
+    color: var(--matcha);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    animation: fade-up 1.1s ease-out;
+}
+
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+}
+
+.contact-info-section h2,
+.contact-map-section h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
+}
+
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    background-color: var(--cream);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.contact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-card-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--matcha-lighter);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-card-icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--matcha-dark);
+}
+
+.contact-card-content h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: var(--space-xs);
+}
+
+.contact-card-content p {
+    color: var(--text-primary);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.contact-card-content a {
+    color: var(--matcha-dark);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.contact-card-content a:hover {
+    color: var(--matcha);
+}
+
+.contact-follow-section {
+    text-align: center;
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-2xl);
+    border-top: 1px solid var(--cream-dark);
+}
+
+.contact-follow-section h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: var(--space-lg);
+}
+
+.contact-social {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-order-cta {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--cream-dark);
+    text-align: center;
+}
+
+.contact-order-cta h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+}
+
+.contact-order-cta .btn {
+    display: inline-flex;
+}
+
+.contact-map-section .map-container {
+    margin-top: 0;
+}
+
+.contact-map-section .map-container iframe {
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .contact-map-section .map-container iframe {
+        height: 300px;
+    }
 }

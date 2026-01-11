@@ -23,7 +23,8 @@ Home-based matcha drinks business in Clementi, Singapore.
 
 ## Business Info
 
-- **Location:** 311B Clementi Ave 4, Singapore (home-based)
+- **Location:** 311B Clementi Ave 4, Singapore 122311 (home-based)
+- **Google Maps:** https://maps.app.goo.gl/UQmg9S3EiwfjrTSH6
 - **Availability:** Pre-order required
 - **Domain Registrar:** Vodien
 
@@ -47,9 +48,14 @@ Home-based matcha drinks business in Clementi, Singapore.
 
 ```
 mofucha/
-├── index.html          # Main page (hero, menu, about, follow us, footer)
-├── css/styles.css      # All styles
-├── js/main.js          # Navigation, scroll animations
+├── index.html              # Homepage (hero, menu, about, follow us, footer)
+├── about/
+│   └── index.html          # About Us page → mofucha.sg/about
+├── contact/
+│   └── index.html          # Contact Us page → mofucha.sg/contact
+├── sitemap.xml             # XML sitemap for SEO
+├── css/styles.css          # All styles
+├── js/main.js              # Navigation, scroll animations
 ├── assets/
 │   ├── images/
 │   │   ├── dreamy-matcha-latte.png
